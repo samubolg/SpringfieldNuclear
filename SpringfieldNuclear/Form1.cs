@@ -33,13 +33,13 @@ namespace SpringfieldNuclear
             SoundPlayer player = new SoundPlayer(Properties.Resources.alert);
             player.Play();
             titleLabel.Text = "Reactor Is Reacting...";
-            reactor1StateLabel.BackColor = Color.Green;
-            reactor2StateLabel.BackColor = Color.Green;
+            reactor1StateLabel.BackColor = Color.Lime;
+            reactor2StateLabel.BackColor = Color.Lime;
             Refresh();
             Thread.Sleep(1000);
             reactor1StateLabel.BackColor = Color.Red;
             reactor2StateLabel.BackColor = Color.Red;
-            titleLabel.Text = "SYSTEM FAILURE";
+            titleLabel.Text = "EVACUATE";
             
         }   
 
